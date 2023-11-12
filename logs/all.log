@@ -1,0 +1,68 @@
+2023-11-04 22:01:44,224 - ERROR - Exception on /shop_graphql [POST]
+Traceback (most recent call last):
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 865, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1239, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "F:\develop\python\earn\works\src\apis\__init__.py", line 29, in before_request
+    validate_data = TokenHandler.verify_tokens(token)
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 35, in verify_tokens
+    user = list(
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 37, in <lambda>
+    lambda u: u.get(user_id, '') == data.get(user_id) and u.get(
+TypeError: '<=' not supported between instances of 'NoneType' and 'float'
+2023-11-04 22:02:05,729 - ERROR - Exception on /shop_graphql [POST]
+Traceback (most recent call last):
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 865, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1239, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "F:\develop\python\earn\works\src\apis\__init__.py", line 29, in before_request
+    validate_data = TokenHandler.verify_tokens(token)
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 35, in verify_tokens
+    user = list(
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 37, in <lambda>
+    lambda u: u.get(user_id, '') == data.get(user_id) and u.get(
+TypeError: '<=' not supported between instances of 'NoneType' and 'float'
+2023-11-04 22:03:37,919 - ERROR - Exception on /shop_graphql [POST]
+Traceback (most recent call last):
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 865, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1239, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "F:\develop\python\earn\works\src\apis\__init__.py", line 29, in before_request
+    validate_data = TokenHandler.verify_tokens(token)
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 35, in verify_tokens
+    user = list(
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 38, in <lambda>
+    int(u.get('end_time')) <= datetime.now().timestamp(),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2023-11-04 22:04:04,271 - ERROR - Exception on /shop_graphql [POST]
+Traceback (most recent call last):
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 865, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "F:\develop\python\earn\works\venv\lib\site-packages\flask\app.py", line 1239, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "F:\develop\python\earn\works\src\apis\__init__.py", line 29, in before_request
+    validate_data = TokenHandler.verify_tokens(token)
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 35, in verify_tokens
+    user = list(
+  File "F:\develop\python\earn\works\src\apis\token_handler.py", line 38, in <lambda>
+    int(u.get('end_time')) <= datetime.now().timestamp(),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
